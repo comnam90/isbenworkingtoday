@@ -16,7 +16,15 @@ import {
   Clock,
   RefreshCw,
   Activity,
-  LucideIcon
+  LucideIcon,
+  Gamepad2,
+  Plane,
+  Pizza,
+  Music,
+  Tent,
+  Cat,
+  Dumbbell,
+  Utensils
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -40,6 +48,14 @@ const iconMap: Record<string, LucideIcon> = {
   BatteryCharging,
   ShoppingBag,
   Clock,
+  Gamepad2,
+  Plane,
+  Pizza,
+  Music,
+  Tent,
+  Cat,
+  Dumbbell,
+  Utensils
 };
 
 const statuses = [
@@ -50,6 +66,7 @@ const statuses = [
   { working: true, answer: "YES", message: "Troubleshooting a Zigbee network failure.", icon: "Wifi" },
   { working: true, answer: "YES", message: "Writing documentation (just kidding, he's debugging).", icon: "FileText" },
   { working: true, answer: "YES", message: "Deploying to the Cloud... slowly.", icon: "Cloud" },
+  
   { working: false, answer: "NO", message: "Gone to Two Thumbs for a 'meeting'.", icon: "Beer" },
   { working: false, answer: "NO", message: "Tinkering with Home Assistant (again).", icon: "Home" },
   { working: false, answer: "NO", message: "Packet loss detected. Brain buffering.", icon: "AlertTriangle" },
@@ -57,6 +74,14 @@ const statuses = [
   { working: false, answer: "NO", message: "Charging the EV. Taking a nap.", icon: "BatteryCharging" },
   { working: false, answer: "NO", message: "Scouring the Op Shops for vintage tech.", icon: "ShoppingBag" },
   { working: false, answer: "NO", message: "Latency too high. Try again tomorrow.", icon: "Clock" },
+  { working: false, answer: "NO", message: "Farming loot drops in a digital realm.", icon: "Gamepad2" },
+  { working: false, answer: "NO", message: "AFK. Touching grass (allegedly).", icon: "Tent" },
+  { working: false, answer: "NO", message: "Negotiating with a cat for keyboard access.", icon: "Cat" },
+  { working: false, answer: "NO", message: "At the gym... mental gymnastics only.", icon: "Dumbbell" },
+  { working: false, answer: "NO", message: "Applying hotfixes to a pizza.", icon: "Pizza" },
+  { working: false, answer: "NO", message: "Debugging a complex sandwich architecture.", icon: "Utensils" },
+  { working: false, answer: "NO", message: "On 'airplane mode' physically and mentally.", icon: "Plane" },
+  { working: false, answer: "NO", message: "Optimizing playlist algorithms.", icon: "Music" },
 ];
 
 const Card = ({ className, children }: { className?: string, children: React.ReactNode }) => (
