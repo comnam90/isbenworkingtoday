@@ -110,7 +110,7 @@ const getRandomStatus = () => {
 };
 
 const getRandomConfidence = () => {
-  return Math.floor(Math.random() * (99 - 12 + 1)) + 12;
+  return Math.floor(Math.random() * (99 - 15 + 1)) + 15;
 };
 
 export default function App() {
