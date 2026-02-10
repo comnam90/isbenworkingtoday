@@ -7,7 +7,6 @@ const mockRandomSequence = (values: number[]) => {
   values.forEach((value) => {
     randomSpy.mockReturnValueOnce(value)
   })
-  return randomSpy
 }
 
 describe('App', () => {
