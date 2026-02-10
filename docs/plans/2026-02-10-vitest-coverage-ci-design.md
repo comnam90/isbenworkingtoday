@@ -31,8 +31,7 @@
   - `test:coverage`: `vitest run --coverage`
 
 ### CI
-- Existing workflow already runs `lint` and `test:coverage` on `main` push and PRs.
-- Ensure `test:coverage` script exists and Vitest is installed.
+- Add a GitHub Actions workflow (`.github/workflows/ci.yml`) to run `lint` and `test:coverage` on `main` push and PRs.
 
 ## Risks & Mitigations
 - **Randomness flakiness:** use deterministic `Math.random` mocks.
